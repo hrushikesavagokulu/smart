@@ -17,18 +17,16 @@ import os
 import mysql.connector
 
 DB_CONFIG = {
-    "host": os.environ.get("MYSQLHOST"),
-    "user": os.environ.get("MYSQLUSER"),
-    "password": os.environ.get("MYSQLPASSWORD"),
-    "database": os.environ.get("MYSQLDATABASE"),
-    "port": int(os.environ.get("MYSQLPORT", 3306)),
-    "ssl_ca": "./certs/ca.pem"   # path to your certificate file
+    "host": "viaduct.proxy.rlwy.net",
+    "user": "root",
+    "password": "HnWZoalEiNjfFvAcDFCPuwDDSZRsPatg",
+    "database": "railway",
+    "port": 23259
 }
-
+print(DB_CONFIG)
 def get_connection():
     """Open a fresh DB connection per request."""
     return mysql.connector.connect(**DB_CONFIG)
-
 
 # ── GET /api/dashboard ─────────────────────────────────
 @app.route("/api/dashboard")

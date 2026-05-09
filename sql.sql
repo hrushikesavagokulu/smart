@@ -1,7 +1,7 @@
 -- Run in MySQL / PostgreSQL
 
-CREATE DATABASE smart_inventory;
-USE smart_inventory;
+-- CREATE DATABASE smart_inventory;
+-- USE smart_inventory;
 
 CREATE TABLE Warehouse (
     warehouse_id INT PRIMARY KEY AUTO_INCREMENT,
