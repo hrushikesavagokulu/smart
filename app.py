@@ -19,7 +19,7 @@ import mysql.connector
 DB_CONFIG = {
     "host": "viaduct.proxy.rlwy.net",
     "user": "root",
-    "password": "HnWZoalEiNjfFvAcDFCPuwDDSZRsPatg",
+    "password": "HnWZoalEiNjfFvAcDFsPatg",
     "database": "railway",
     "port": 23259
 }
